@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, blueviolet, grey);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  width: 50%;
+  height: 90%;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bar-plot-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bar-plot {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.plot {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.plot-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.bar30 {
+  animation-name: fill30;
+}
+
+@keyframes fill30 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 30%;
+  }
+}
+
+.bar40 {
+  animation-name: fill40;
+}
+
+@keyframes fill40 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 40%;
+  }
+}
+
+.bar80 {
+  animation-name: fill80;
+}
+
+@keyframes fill80 {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: 80%;
+  }
+}
